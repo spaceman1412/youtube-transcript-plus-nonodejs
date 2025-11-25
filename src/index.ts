@@ -193,7 +193,7 @@ export class YoutubeTranscript {
 }
 
 export type { CacheStrategy } from './types';
-export { InMemoryCache, FsCache } from './cache';
+export { InMemoryCache } from './cache';
 
 export * from './errors';
 

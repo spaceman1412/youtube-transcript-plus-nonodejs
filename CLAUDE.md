@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**youtube-transcript-plus** is a Node.js library that fetches YouTube video transcripts using YouTube's unofficial Innertube API. The library provides multiple caching strategies, language support, custom fetch functions, and comprehensive error handling.
+**youtube-transcript-plus** is a lightweight library (browser + Node) that fetches YouTube video transcripts using YouTube's unofficial Innertube API. The library provides caching, language support, custom fetch functions, and comprehensive error handling.
 
 ## Development Commands
 
@@ -51,9 +51,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Caching System (`src/cache/`)
 
-**Two built-in implementations:**
+**Built-in implementation:**
 - `InMemoryCache` - Memory-based with TTL support
-- `FsCache` - File system-based with TTL support
 
 **Custom Strategy Support:**
 - Implement `CacheStrategy` interface with `get()` and `set()` methods
@@ -83,7 +82,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **Rollup (`rollup.config.js`)**
 - ESM output format
 - TypeScript compilation with declaration generation
-- External dependencies: `fs/promises`, `path`
 
 **Jest (`jest.config.js`)**
 - ts-jest preset for TypeScript support

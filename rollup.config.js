@@ -11,5 +11,4 @@ export default {
     file: 'dist/youtube-transcript-plus.js',
     format: 'esm',
   },
-  external: ['fs/promises', 'path'],
 };
